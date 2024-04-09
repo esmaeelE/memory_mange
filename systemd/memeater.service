@@ -1,0 +1,16 @@
+[Unit]
+Description=Memoryeater
+After=network.target
+
+[Service]
+Type=idle
+Restart=on-failure
+User=root
+ExecStart=/usr/bin/python3 /home/user/dev/eater.py
+#MemoryHigh=3G
+MemoryMax=4G
+MemoryAccounting=yes
+#StartLimitIntervalSec=2
+
+[Install]
+WantedBy=multi-user.target
