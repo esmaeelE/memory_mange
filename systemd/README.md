@@ -27,4 +27,11 @@ htop
 free -hm
 ```
 
+## Notes
+
+Systemd manage restriction with **cgroup** in GNU/Linux.
+
+Control Groups. The control groups, abbreviated as cgroups in this guide, are a **Linux kernel feature** that allows you to allocate resources — such as **CPU** time, system **memory**, **network** bandwidth, or combinations of these resources — among hierarchically ordered groups of processes running on a system.
+
+
 
